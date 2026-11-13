@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Баннер для Android TV (1280x720) — векторный, весит почти ноль -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:startColor="#101418"
+                android:endColor="#1B2735" />
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <shape android:shape="rectangle">
+            <size android:width="420dp" android:height="140dp" />
+            <solid android:color="#2E9B6B" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+</layer-list>

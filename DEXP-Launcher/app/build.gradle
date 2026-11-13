@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.dexp.launcher'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.dexp.launcher"
+        minSdk 19          // DEXP 24HEY1 — Android 4.4/5.1 (KitKat/Lollipop)
+        targetSdk 29       // ниже 30, чтобы не требовался Manage Storage permission
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // Максимально лёгкий лаунчер: только AndroidX core + Leanback для TV-навигации
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.leanback:leanback:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+}
