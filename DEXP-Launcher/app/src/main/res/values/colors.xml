@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#FF101418</color>
+    <color name="bg_dark2">#FF1B2735</color>
+    <color name="text_primary">#FFF2F4F7</color>
+    <color name="text_secondary">#FF9AA6B2</color>
+    <color name="accent">#FF2E9B6B</color>
+    <color name="focus_ring">#FF4FC3F7</color>
+    <color name="cell_pressed">#33FFFFFF</color>
+</resources>

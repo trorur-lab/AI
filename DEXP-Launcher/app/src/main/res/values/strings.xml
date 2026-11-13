@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DEXP Launcher</string>
+
+    <string name="boost">⚡ Ускорить</string>
+    <string name="storage">Память</string>
+
+    <string name="memory_label">Свободно: %1$s</string>
+    <string name="boost_done">Очищено процессов: %1$d. ТВ работает быстрее!</string>
+    <string name="launch_error">Не удалось запустить приложение</string>
+
+    <string name="act_info">О приложении / удалить мусор</string>
+    <string name="act_uninstall">Удалить</string>
+
+    <string name="menu_boost">Ускорить ТВ (очистить память)</string>
+    <string name="menu_home_default">Сделать лаунчером по умолчанию</string>
+
+    <string name="privacy_note">Без рекламы • Без трекеров • Без интернета • Только локальная очистка</string>
+</resources>
