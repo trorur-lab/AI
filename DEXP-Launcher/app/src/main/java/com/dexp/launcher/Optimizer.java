@@ -79,7 +79,10 @@ public class Optimizer {
         if (procs == null) return 0;
         for (ActivityManager.RunningAppProcessInfo p : procs) {
             if (p.processName.equals(self)) continue;
-            if ((p.flags & ActivityManager.RunningAppProcessInfo.FLAG_PERSISTENT) != 0) continue;
+            // не трогаем системные процессы вида system:xxx и com.android.*
+            String name = p.processName;
+            if (name.startsWith("system") || name.startsWith("com.android.")
+                    || name.startsWith("android")) continue;
             if (p.importance <= ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) continue;
             try {
                 am.killBackgroundProcesses(p.processName);
